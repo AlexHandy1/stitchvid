@@ -18,6 +18,9 @@ playlist of all videos by topic
 
 * Challenges and proposed improvements - incremental features on our product roadmap include a native/ hybrid app uploader with a greater suite of functionality, user interaction features (e.g. profiles, favouriting videos, following other users) and a custom video architecture to move away from reliance on YouTube API
 
+
+![Stitch - Front Page](https://github.com/AlexHandy1/subredditor/blob/master/public/Stitchvid.png)
+
 Use Cases:
 -------
 
@@ -54,8 +57,6 @@ Use Cases:
          So that others don't upload instead of me,
          I want to have to login to upload a video
 ```
-
-[Waffle](https://waffle.io/snapchidu/stitchvid)
 
 How to run
 ----
