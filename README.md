@@ -1,42 +1,66 @@
+Summary
+=================
+
 [![Build Status](https://travis-ci.org/snapchidu/stitchvid.svg?branch=develop)](https://travis-ci.org/snapchidu/stitchvid)
 
-User stories:
+* Nowadays, with the ever increasing amount of social media, digital content is becoming increasingly incoherent and challenging to consume. For example, with popular events/ trends it is typically one post that goes viral and the broader context and narrative regularly gets lost.  This issue becomes even worse with visual narratives - we found that there were almost no coherent and compelling visual narratives across current social media platforms.
 
-- [] As a user,
-      So that I can see the latest videos
-      I want to see a list of videos on the homepage
+* *What if you could create a video narrative around topics with friends?* - Stitch is a web AND mobile app that allows users to create individual crowdsourced videos tagged by topic (e.g. #Wimbledon) and automatically creates an aggregated ‘stitched’
+playlist of all videos by topic
 
-- [] As a user
-     So that I can add to latest videos
-     I want to upload to the app
+* To ensure we could quickly iterate from a solid prototype, we elected to build the back-end around the YouTube IFrame API to handle the heavy mechanics associated with serving video on web and mobile (e.g. upload, storage, encoding, streaming/ embedded player)
 
-- [] As an admin
-     So that my website doesn't crash
-     I want to store my videos efficiently
+* For the MVP we decided against developing a hybrid/ native mobile app in favour of developing a specialised mobile website. Firstly, the mobile website form already satisfied the core user requirement to be able to record footage and upload directly from local video gallery. Secondly, given the deadline of < 2 weeks to develop a presentation ready app, to ensure we produced robust, incremental improvements we did not want to divert significant team resources to exploring a full native app build.
 
-- [] As a user,
-     So that I can see videos by a topic (#hashtag)
-     I want to view curated topics on the homepage
+* As a team, we followed Agile, Git workflow and TDD methodologies - created user stories to develop and deliver an MVP and created a waffle.io board to manage tickets >> [Waffle](https://waffle.io/snapchidu/stitchvid).
 
-- [] As a user,
-     So that I can add my own interests
-     I want to be able to add my own topics (#hashtags) to homepage
+* To view simply click on the heroku link [Stitch](http://stitchvid.herokuapp.com/) and you can log-in via your Google Plus Account to start uploading videos via your YouTube account. Detailed instructions for local installation below.
 
-- [] As a user,
-     So that I can contribute to hashtags I am interested in
-     I want to upload videos directly to a specific hashtag
+* Challenges and proposed improvements - incremental features on our product roadmap include a native/ hybrid app uploader with a greater suite of functionality, user interaction features (e.g. profiles, favouriting videos, following other users) and a custom video architecture to move away from reliance on YouTube API
 
-- [] As a user
-     So that I can get a visual narrative of a particular topic (#hashtag)
-     I want to be able to stitch videos together
+Use Cases:
+-------
 
-- [] As a user
-     So that others don't upload instead of me
-     I want to have to login to upload a video
+```
+    - [x] As a user,
+          So that I can see the latest videos,
+          I want to see a list of videos on the homepage
 
-[!Waffle](https://waffle.io/snapchidu/stitchvid)
+    - [x] As a user,
+         So that I can add to latest videos,
+         I want to upload to the app
 
-## Installation instructions
+    - [x] As an admin,
+         So that my website doesn't crash,
+         I want to store my videos efficiently
+
+    - [x] As a user,
+         So that I can see videos by a topic (#hashtag),
+         I want to view curated topics on the homepage
+
+    - [x] As a user,
+         So that I can add my own interests,
+         I want to be able to add my own topics (#hashtags) to homepage
+
+    - [x] As a user,
+         So that I can contribute to hashtags I am interested in,
+         I want to upload videos directly to a specific hashtag
+
+    - [x] As a user,
+         So that I can get a visual narrative of a particular topic (#hashtag),
+         I want to be able to stitch videos together
+
+    - [x] As a user,
+         So that others don't upload instead of me,
+         I want to have to login to upload a video
+```
+
+[Waffle](https://waffle.io/snapchidu/stitchvid)
+
+How to run
+----
+
+## Local Installation instructions
 
 ### YouTube API setup
 
@@ -87,3 +111,18 @@ heroku open
 Also `heroku config` to check config vars, `heroku run bash` to get shell and `heroku -t logs` to get live logging are useful.
 
 To attach a local repo to an existing heroku instance, use `heroku git:remote -a [heroku instance name]`.
+
+Technologies used
+----
+
+* Production - Ruby-on-Rails, Javascript, jQuery, Heroku, CSS (using Bootstrap), HTML, YouTube API, Omniauth, PostgreSQL
+* Testing - Rspec, Capybara
+
+Further Improvements
+----
+
+*  Develop Native/ Hybrid app uploader offering more functionality, video capture and viewing options vs current mobile optimised website
+
+*  User interaction with other users e.g. profiles, favourite videos, follow other users
+
+*  Build custom video architecture e.g. not reliant entirely on YouTube API
