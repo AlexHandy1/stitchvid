@@ -40,8 +40,6 @@ top:48%;
  /*Buttons*/
 
 
-
-
 .stitch-btn { background-color: #e74c3c; color: white;}
 
 
@@ -151,88 +149,6 @@ margin-top: 7em;
 
 }
 
-
-
-/*.video-header img {
-    min-height: 250px;
-    padding-bottom: 50px;
-    margin-top: 50px;
-    -moz-box-shadow:  0 2px 5px 0 #333;
-    -webkit-box-shadow: 0 2px 5px 0 #333;
-    box-shadow: 0 2px 5px 0 #333;
-    position: absolute;
-    overflow: hidden;
-
-}*/
-
-/*.hashcontainer{
-
- float: left;
- white-space: nowrap;
- position: relative;
- margin-top: 3em;
- width: 5em;
-
-}*/
-
-/*.hashcontainer h3 {
-
-  margin-left: 0.5em;
-  margin-top: 1.2em;
-  color: #e74c3c;
-
-}*/
-
-/*.hashcontainer button {
-
-  margin-left: 0.5em;
-  margin-top: 1em;
-
-}*/
-
-
-
-
-/*.row-container{
-
- width: 0 auto;
- height: 25em;
- border: 3px solid #e74c3c;
- margin-top:2em;
- overflow-x: scroll;
- overflow-y: hidden;
- white-space: nowrap;
-
-}*/
-
-/*.row-video{
-
- position: relative;
- width: 80%;
- margin-left: 15.5em;
- margin-top: 5em;
- height: 15em;
- background-color: #444;
- overflow-x: scroll;
- overflow-y: hidden;
- white-space: nowrap;
-}
-*/
-/*#append-vid{ border: 3px solid black;
-             width: 256px;
-             height: 144px;
-           }*/
-
-
-/*iframe { margin: 2em 0 0 2.5em;}*/
-
-/*#stitch {
-
-  height: 30px;
-  width: 30px;
-
-}*/
-
 .youtube-thumb {
   vertical-align: inherit;
 }
@@ -266,19 +182,3 @@ margin-top: 7em;
   }
 
 }
-
-
-  /*
-
-  .create-btn{ margin-top: 2em; background-color: white; color: #e74c3c;}
-
-  .stitch-container { margin: 0;}
-
-  #tagname-mobile { text-align: center; color: white;}
-
-  .row-container { border: none; margin-top: 0;}
-
-  .add { margin-top: 2.5%; margin-left: 45%; padding-bottom: 3px; color: white;}
-
-}
-*/

@@ -27,21 +27,18 @@ feature 'Videos upload and publish' do
     expect(page).to have_link('Create Stitch')
   end
 
-  # THIS IS A UNIT TEST, ISN'T IT?
   scenario 'shows videos on homepage' do
     add_video_link()
     visit '/'
     expect(page).to have_css('iframe')
   end
 
-  # FEATURE TEST?!
   scenario 'uploads videos' do
     add_video_link()
     expect(current_path).to eq('/')
     expect(page).to have_css('iframe')
   end
 
-  # FEATURE TEST
   scenario 'stitches videos together' do
     add_video_link()
     add_video_link('https://www.youtube.com/watch?v=qXsT2KtYZOM')
