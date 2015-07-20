@@ -3,7 +3,7 @@ Summary
 
 [![Build Status](https://travis-ci.org/snapchidu/stitchvid.svg?branch=develop)](https://travis-ci.org/snapchidu/stitchvid)
 
-* Nowadays, with the ever increasing amount of social media, digital content is becoming increasingly incoherent and challenging to consume. For example, with popular events/ trends it is typically one post that goes viral and the broader context and narrative regularly gets lost.  This issue becomes even worse with visual narratives - we found that there were almost no coherent and compelling visual narratives across current social media platforms.
+* Nowadays, with the ever increasing amount of social media content and platforms, digital content is becoming increasingly incoherent and challenging to consume. For example, with popular events/ trends it is typically one post that goes viral and the broader context and narrative regularly gets lost.  This issue becomes even worse with visual narratives - we found that there were almost no coherent and compelling visual narratives across current social media platforms.
 
 * *What if you could create a video narrative around topics with friends?* - Stitch is a web AND mobile app that allows users to create individual crowdsourced videos tagged by topic (e.g. #Wimbledon) and automatically creates an aggregated ‘stitched’
 playlist of all videos by topic
